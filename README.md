@@ -1,6 +1,6 @@
 simple project is built using React.js, a popular JavaScript library for building user interfaces.
 **Search Functionality:** 
-Users can search for a specific country by entering its name . This feature makes it easy for users to quickly find information about a particular country of interest.
+Users can search for a specific country by entering its name or the continent . This feature makes it easy for users to quickly find information about a particular country of interest.
 
  **User-Friendly Interface:**
  The website's user interface is designed with React.js.
