@@ -9,10 +9,7 @@ function App() {
      <Header/>
       <div className="container">
 
-    
-
-
-      <div className="row">
+      <div className="hd">
      <Fetch/>
      </div>
     

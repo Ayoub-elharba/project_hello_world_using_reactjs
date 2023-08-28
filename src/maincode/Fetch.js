@@ -40,33 +40,19 @@ function Fetch() {
     }
 
 
-    // const DTB=DataInfo.map((k)=>k.continents)
+         const DTB=DataInfo.map((k)=>k.region)
     
-   
-   
+           
+            const uni = DTB.filter((val, id)=>{
+                return DTB.indexOf(val) === id; 
+            });
 
+        
 
-    // const unii = DataInfo.filter(function(elem, pos) {
-    //         return DataInfo.indexOf(elem) === pos;
-    //         })
-
-            // const uniq=(a)=>{
-            //     return a.sort().filter(function(item, pos, ary) {
-            //         return !pos || item !== ary[pos-1];
-            //     });
-            // }
-            // const unio=uniq(DTB)
-
-            // const uni = unio.filter((val, id) => {
-            //         return unio.indexOf(val) === id;
-            //      })
-
-            
     
   return (
     
     <div className='container'>
-       
 
          <div className='text-center'>
         {loiding && <div className="spinner-border text-primary" role="status">
@@ -82,28 +68,19 @@ function Fetch() {
         </section>
         
        <div className="inpu mt-2">
-        <input type="text" placeholder='search'  onChange={handel}/>
+        <input type="text" placeholder=' search                                                                  بحث'  onChange={handel}/>
         </div>
 
         <div className="row">
 
         <select className="form-select mb-5" style={{fontSize:'20px',fontWeight:'bolder', color:'#ff8000'}} aria-label="Default select example" onChange={handel}>
-        <option defaultValue value=''>Choose a continent</option>
-        {/* {
+        <option defaultValue value=''>Choose a region</option>
+        {
                 uni.map((c ,i)=>
                     <option key={i} value={c}>{c}</option>
             )
             
-            } */}
-            <option value="Africa">Africa</option>
-            <option value="Antarctica">Antarctica</option>
-            <option value="Asia">Asia</option>
-            <option value="Europe">Europe</option>
-            <option value="EuropeAsia">EuropeAsia</option>
-            <option value="North America">North America</option>
-            <option value="Oceania">Oceania</option>
-            <option value="South America">South America</option>
-
+            }
       
         </select>
 
@@ -123,7 +100,10 @@ function Fetch() {
                 else if(e.name.common.toLowerCase().includes(serch.toLowerCase())){
                     return e;
                     }
-                else if(e.continents.includes(serch)){
+                else if(e.translations.ara.common.includes(serch)){
+                    return e;
+                }
+                else if(e.region.includes(serch)){
                     return e;
                 }
                
@@ -135,7 +115,7 @@ function Fetch() {
             .slice(0, limit).map((e,i)=>{
                 return(
                    
-                    <div key={i} className="col-md-3 mt-4">
+                    <div key={i} className="col-lg-3 col-md-6 col-sm-12 mt-4">
                     <div className="card" style={{height:'32rem',background:'#ffff'}} >
                             <img src={e.flags.png} alt="" className="card-img-top" style={{height:'160px' ,borderBottom:'2px solid black'}} />
                             <div className="card-body">

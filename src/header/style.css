@@ -5,6 +5,7 @@ body {
 }
 
 
+
 .bg-primary {
     background: #6200ff !important;
     color: white;
@@ -45,9 +46,6 @@ body {
     margin: 0 auto;
     margin-bottom: 80px;
     border:none;
-
-
-
 }
 
 input[type=text] {
@@ -85,7 +83,6 @@ input[type=text]:hover{
     font-size: 50px;
      font-weight: 800;
     color: rgb(255, 7, 118);
-
 }
 
 label{
@@ -152,10 +149,74 @@ footer a:hover{
 }
 
 
-/* .form-select{
+.form-select{
     margin-bottom: 10px;
-} */
+}
 option{
     color: #660066;
-    /* text-transform: uppercase; */
+    text-transform: uppercase;
 }
+.HDV{
+    direction: rtl;
+    font-size: "50px";
+    margin-right: "100px";
+    color: "white";
+    padding: 5%;
+}
+@media screen and (max-width: 768px) {
+    /* *{
+      background-color: rgb(0, 0, 0);
+    } */
+    .inpu{
+        justify-content: center;
+        width:60%;
+        margin: 0 auto;
+        margin-bottom: 80px;
+        border:none;
+    }
+
+    #parag {
+ 
+        font-size: 40px;
+    }
+    #parag span{
+        font-size: 40px;
+    }
+  
+    #logo-header {
+        position: absolute;
+        z-index: 599;
+        left: 70px;
+        top: 60px;
+    }
+    
+    #logo-img {
+        height: 250px;
+        -webkit-filter: drop-shadow(5px 5px 20px #000000);
+        filter: drop-shadow(10px 20px 25px #000000);
+    }
+    .HDV{   
+        direction: rtl;
+        padding: 5%;
+        font-size: "50px";
+        color:#000000;
+
+    }
+  }
+  @media screen and (min-width: 768px ) and (max-width: 991.5px) {
+    .inpu{
+        justify-content: center;
+        width:56%;
+        margin: 0 auto;
+        margin-bottom: 80px;
+        border:none;
+    }
+
+    #parag {
+ 
+        font-size: 40px;
+    }
+    #parag span{
+        font-size: 40px;
+    }
+  }
