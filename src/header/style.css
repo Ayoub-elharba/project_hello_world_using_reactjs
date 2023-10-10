@@ -16,10 +16,40 @@ body {
     background: #5b0d25 !important;
     color: white;
 }
+#imgfy{
+    margin-left: -30%;
+   padding-top: 10%;
+    width: 300px;
+    z-index: 1;
+    position: absolute;
+    animation: myfirst 25s linear infinite;  
+    -webkit-filter: drop-shadow(5px 5px 30px #000000);
+    filter: drop-shadow(15px 25px 35px #000000);
+}
+#hederfly{
+    width: 100%;
+    position: absolute;
+    
+}
+@keyframes myfirst{
 
+   
+    100%{
+        padding-top: 0%;
+        transform:translateX(2000px);
+        width: 750px;
+        -webkit-filter: drop-shadow(5px 5px 6px #000000);
+        filter: drop-shadow(5px 5px 5px #000000);
+
+        
+
+    }
+}
 #header-background {
     background-image: url("pattern4.png");
+   
 }
+
 
 #header {
     clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 80%);
@@ -37,6 +67,16 @@ body {
     height: 300px;
     -webkit-filter: drop-shadow(5px 5px 30px #000000);
     filter: drop-shadow(15px 25px 35px #000000);
+    animation: mysecond 7.5s infinite linear;
+}
+@keyframes mysecond{
+    0%{
+        transform: rotate(360deg);
+    }
+    100%{
+        transform:rotate(0deg);
+
+    }
 }
 
 /* fetch code */

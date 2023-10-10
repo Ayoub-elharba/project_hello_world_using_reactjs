@@ -8,7 +8,14 @@ function Header() {
     <div id="logo-header">
         <img id="logo-img" src={require('./logo.png')} alt="" />
     </div>
+    <div id="hederfly"  style={{height: '20rem'}}>
+     
+      <img id="imgfy" src={require('./R.png')} alt="" />
 
+     
+    </div>
+
+    
     <div id="header" style={{height: '20rem'}} className="bg-primary" >
         <div id="header-background" style={{width:'100%', height:'100%'}}>
 
@@ -17,9 +24,12 @@ function Header() {
                 <h1 style={{fontSize: "90px", fontWeight: "800"}}>العالم</h1>
             </div>
         </div>
+
+        
     </div>
     
     </div>
+    
   )
 }
 
