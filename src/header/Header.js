@@ -8,7 +8,7 @@ function Header() {
     <div id="logo-header">
         <img id="logo-img" src={require('./logo.png')} alt="" />
     </div>
-    <div id="hederfly"  style={{height: '20rem'}}>
+    <div id="hederfly" >
      
       <img id="imgfy" src={require('./R.png')} alt="" />
 

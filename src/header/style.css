@@ -4,8 +4,6 @@ body {
     
 }
 
-
-
 .bg-primary {
     background: #6200ff !important;
     color: white;
@@ -25,6 +23,7 @@ body {
     animation: myfirst 25s linear infinite;  
     -webkit-filter: drop-shadow(5px 5px 30px #000000);
     filter: drop-shadow(15px 25px 35px #000000);
+    
 }
 #hederfly{
     width: 100%;
@@ -50,6 +49,10 @@ body {
    
 }
 
+#hederfly{
+    height: 20rem;
+    overflow: hidden;
+}
 
 #header {
     clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 80%);
